@@ -89,7 +89,7 @@ namespace VS_13._1._1
             Width = width;
             Height = height;
         }
-        public virtual void Print()
+        public void Print()
         {
             Console.WriteLine("Адрес: {0},\nдлина здания: {1:f2} м, ширина здания: {2:f2} м, высота здания: {3:f2} м", Address, Length, Width, Height);
         }
@@ -122,7 +122,7 @@ namespace VS_13._1._1
         {
             Floor = floor;
         }
-        public override void Print()
+        public void Print()
         {
             base.Print();
             Console.WriteLine("этажей {0}", Floor);
